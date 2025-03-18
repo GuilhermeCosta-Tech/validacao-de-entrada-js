@@ -37,20 +37,19 @@ Este projeto simula um sistema de coleta e validação de dados inseridos pelo u
 3. Abra o arquivo `index.html` em um navegador.
 
 ## 📝 Exemplos de Validação com Regex (dados fictícios):
+- **Nome válido:** `Gabriel Lozano`
+- **Nome válido:** `João Victor`
 - **E-mail válido:** `Gabrielsilva22@icloud.com`
 - **E-mail inválido:** `Joãovictor@gmail.com`
 - **Telefone válido:** `+55 11 98765-4321`
 - **Telefone inválido:** `1198765-4321`
-//Neste programa de validação, suponhamos que hipoteticamente o user tem estes dados:
-//Nome: Gabriel Lozano
-//E-mail: Gabrielsilva22@icloud.com
-//Senha: Gabriel88@ip
 
 let nome = 'Gabriel Lozano';
 let email = 'Gabrielsilva22@icloud.com';
 let senha = 'Gabriel88@ip';
 
 // Função para validar o formulário
+
 function validarFormulario(event) {
     event.preventDefault();  // Impede o envio do formulário até que todas as validações sejam feitas
 
@@ -66,6 +65,7 @@ function validarFormulario(event) {
 }
 
 // Função para validar o nome do usuário
+
 function validarNome() {
     var nomeInserido = document.getElementById('nome').value;  // Obtém o nome inserido pelo usuário;
     var nome = 'Gabriel Lozano';  // E compara com o nome esperado
@@ -82,6 +82,7 @@ function validarNome() {
 }
 
 // Função para validar o e-mail ou telefone do usuário
+
 function validarDominio() {
     var contato = document.getElementById('email').value;  // Busca o valor do e-mail ou número de telefone inserido pelo usuário
 
@@ -109,6 +110,7 @@ function validarDominio() {
 }
 
 // Função para validar a senha do usuário
+
 function validarSenha() {
     var senha = document.getElementById('senha').value;
 
@@ -128,7 +130,6 @@ function validarSenha() {
         return true;
     }
 }
-
 
 ## 📌 Melhorias Futuras
 - Integração com um banco de dados para armazenar as informações coletadas.
