@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Login" content="Pagina de login para sua conta na amazon">
+    <title>Entrar - Amazon</title>
+    <link rel="stylesheet" href="./HomePage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo da Amazon">
+        </header>
+
+        <div class="form-container">
+            <h2>Fazer login</h2>
+            <form id="formCadastro" onsubmit="return validarFormulario(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <div id="erroNome" style="color: red; display: none;"></div>
+
+                <label for="email">E-mail ou telefone:</label>
+                <input type="text" id="email" required>
+                <div id="erroEmail" style="color: red; display: none;"></div>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+                <div id="erroSenha" style="color: red; display: none;"></div>
+
+                <form action="./Products.html" method="post">
+                    <button type="submit" class="button">Entrar</button>
+                </form>
+                
+            </form>
+
+            <p class="terms">
+                Ao continuar, você concorda com as <a
+                    href="https://www.amazon.com.br/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&nodeId=201283910">Condições
+                    de Uso</a> da Amazon.
+            </p>
+        </div>
+    </div>
+    <script src="./HomePage.js"></script>
+</body>
+
+</html>
