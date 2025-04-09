@@ -38,7 +38,7 @@ Este projeto simula um sistema de coleta e validação de dados inseridos pelo u
 
 ## 📝 Exemplos de Validação com Regex (dados fictícios):
 - **Nome válido:** `Gabriel Lozano`
-- **Nome válido:** `João Victor`
+- **Nome inválido:** `João Victor`
 - **E-mail válido:** `Gabrielsilva22@icloud.com`
 - **E-mail inválido:** `Joãovictor@gmail.com`
 - **Telefone válido:** `+55 11 98765-4321`
